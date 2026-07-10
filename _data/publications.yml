@@ -126,4 +126,6 @@
   type: "Review"
   title: "A Survey of Tensor Decompositions and Low-Rank Tensor Recovery"
   authors: "Zihao He, Michael K. Ng, and Jinming Wen"
+  version_note: "A preliminary version is available on"
+  paper_label: "ResearchGate"
   paper: "https://www.researchgate.net/publication/404890521_A_Survey_of_Tensor_Decompositions_and_Low-Rank_Tensor_Recovery"

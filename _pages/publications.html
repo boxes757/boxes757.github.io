@@ -67,7 +67,11 @@ author_profile: true
       <div class="publication-authors">
         {{ pub.authors | replace: "Zihao He", "<strong>Zihao He</strong>" }}
       </div>
-      {% if pub.paper or pub.arxiv %}
+      {% if pub.version_note and pub.paper %}
+        <div class="publication-note">
+          {{ pub.version_note }} <a href="{{ pub.paper }}">{{ pub.paper_label | default: "paper" }}</a>.
+        </div>
+      {% elsif pub.paper or pub.arxiv %}
         <div class="publication-note">
           Available version:
           {% if pub.paper %}<a href="{{ pub.paper }}">[paper]</a>{% endif %}
