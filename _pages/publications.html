@@ -5,34 +5,103 @@ permalink: /publications/
 author_profile: true
 ---
 
-<p>
-  For the complete and most up-to-date publication list, please visit
+<style>
+  .publications-intro {
+    margin-bottom: 1.75rem;
+  }
+
+  .publication-year {
+    margin-top: 2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .publication-item {
+    margin-bottom: 1.45rem;
+  }
+
+  .publication-title {
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .publication-type {
+    margin-left: 0.35rem;
+    font-size: 0.78em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .publication-authors,
+  .publication-venue {
+    line-height: 1.55;
+  }
+
+  .publication-venue {
+    font-size: 0.95em;
+  }
+
+  .publication-links {
+    margin-top: 0.2rem;
+    font-size: 0.92em;
+  }
+
+  .publication-links a {
+    margin-right: 0.8rem;
+  }
+</style>
+
+<p class="publications-intro">
+  Publications are listed in reverse chronological order, with my name shown in bold.
+  For the most up-to-date list, please visit
   <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+  You can also download the <a href="{{ '/files/publications.bib' | relative_url }}">BibTeX file</a>.
 </p>
 
-{% include base_path %}
-{% assign publication_count = site.publications | size %}
-
-{% if publication_count > 0 %}
-  {% if site.publication_category %}
-    {% for category in site.publication_category %}
-      {% assign title_shown = false %}
-      {% for post in site.publications reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
-        {% endif %}
-        {% unless title_shown %}
-          <h2>{{ category[1].title }}</h2><hr />
-          {% assign title_shown = true %}
-        {% endunless %}
-        {% include archive-single.html %}
-      {% endfor %}
-    {% endfor %}
-  {% else %}
-    {% for post in site.publications reversed %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endif %}
-{% else %}
-  <p>Individual publication entries will be added here. Google Scholar currently provides the authoritative list.</p>
+{% assign manuscripts = site.data.publications | where: "status", "manuscript" %}
+{% if manuscripts.size > 0 %}
+  <h2 class="publication-year">Manuscripts</h2>
+  {% for pub in manuscripts %}
+    <div class="publication-item">
+      <div class="publication-title">
+        {{ pub.title }} <span class="publication-type">[{{ pub.type }}]</span>
+      </div>
+      <div class="publication-authors">
+        {{ pub.authors | replace: "Zihao He", "<strong>Zihao He</strong>" }}
+      </div>
+      <div class="publication-venue"><em>{{ pub.venue }}</em>.</div>
+    </div>
+  {% endfor %}
 {% endif %}
+
+{% assign published = site.data.publications | where: "status", "published" | sort: "sort_key" | reverse %}
+{% assign last_year = "" %}
+
+{% for pub in published %}
+  {% if pub.year != last_year %}
+    <h2 class="publication-year">{{ pub.year }}</h2>
+    {% assign last_year = pub.year %}
+  {% endif %}
+
+  <div class="publication-item">
+    <div class="publication-title">
+      {{ pub.title }} <span class="publication-type">[{{ pub.type }}]</span>
+    </div>
+
+    <div class="publication-authors">
+      {{ pub.authors | replace: "Zihao He", "<strong>Zihao He</strong>" }}
+    </div>
+
+    <div class="publication-venue">
+      <em>{{ pub.venue }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.number %}({{ pub.number }}){% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %} ({{ pub.year }}).
+    </div>
+
+    {% if pub.paper or pub.doi or pub.arxiv or pub.code %}
+      <div class="publication-links">
+        {% if pub.paper %}<a href="{{ pub.paper }}">Paper</a>{% endif %}
+        {% if pub.doi %}<a href="{{ pub.doi }}">DOI</a>{% endif %}
+        {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+        {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
