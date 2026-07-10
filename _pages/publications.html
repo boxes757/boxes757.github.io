@@ -58,7 +58,7 @@ author_profile: true
 
 {% assign reviews = site.data.publications | where: "status", "review" %}
 {% if reviews.size > 0 %}
-  <h2 class="publication-year">Review</h2>
+  <h2 class="publication-year">Under Review</h2>
   {% for pub in reviews %}
     <div class="publication-item">
       <div class="publication-title">
@@ -67,9 +67,11 @@ author_profile: true
       <div class="publication-authors">
         {{ pub.authors | replace: "Zihao He", "<strong>Zihao He</strong>" }}
       </div>
-      {% if pub.paper %}
+      {% if pub.paper or pub.arxiv %}
         <div class="publication-note">
-          A preliminary version is available on <a href="{{ pub.paper }}">ResearchGate</a>.
+          Available version:
+          {% if pub.paper %}<a href="{{ pub.paper }}">[paper]</a>{% endif %}
+          {% if pub.arxiv %}<a href="{{ pub.arxiv }}">[arXiv]</a>{% endif %}
         </div>
       {% endif %}
     </div>
