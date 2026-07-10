@@ -4,7 +4,7 @@ site_theme: "default"
 title: "Zihao He"
 title_separator: "-"
 name: &name "Zihao He"
-description: &description "Academic homepage of Zihao He, focusing on compressed sensing, sparse signal recovery, and nonconvex optimization."
+description: &description "Academic homepage of Zihao He, focusing on compressed sensing, tensor decomposition and recovery, and nonconvex optimization."
 url: "https://boxes757.github.io"
 baseurl: ""
 repository: "boxes757/boxes757.github.io"
@@ -14,9 +14,9 @@ author:
   avatar: "https://avatars.githubusercontent.com/u/63056376?v=4"
   name: "Zihao He"
   pronouns:
-  bio: "M.S.–Ph.D. Candidate in Cyberspace Security"
-  location: "Guangzhou, China"
-  employer: "Jinan University"
+  bio: "Postdoctoral Fellow"
+  location: "Hong Kong SAR, China"
+  employer: "Hong Kong Baptist University"
   uri:
   email:
   googlescholar: "https://scholar.google.com/citations?user=daMAUUkAAAAJ&hl=en"
