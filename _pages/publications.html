@@ -32,11 +32,13 @@ author_profile: true
   }
 
   .publication-authors,
-  .publication-venue {
+  .publication-venue,
+  .publication-note {
     line-height: 1.55;
   }
 
-  .publication-venue {
+  .publication-venue,
+  .publication-note {
     font-size: 0.95em;
   }
 
@@ -54,13 +56,12 @@ author_profile: true
   Publications are listed in reverse chronological order, with my name shown in bold.
   For the most up-to-date list, please visit
   <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
-  You can also download the <a href="{{ '/files/publications.bib' | relative_url }}">BibTeX file</a>.
 </p>
 
-{% assign manuscripts = site.data.publications | where: "status", "manuscript" %}
-{% if manuscripts.size > 0 %}
-  <h2 class="publication-year">Manuscripts</h2>
-  {% for pub in manuscripts %}
+{% assign reviews = site.data.publications | where: "status", "review" %}
+{% if reviews.size > 0 %}
+  <h2 class="publication-year">Review</h2>
+  {% for pub in reviews %}
     <div class="publication-item">
       <div class="publication-title">
         {{ pub.title }} <span class="publication-type">[{{ pub.type }}]</span>
@@ -68,7 +69,11 @@ author_profile: true
       <div class="publication-authors">
         {{ pub.authors | replace: "Zihao He", "<strong>Zihao He</strong>" }}
       </div>
-      <div class="publication-venue"><em>{{ pub.venue }}</em>.</div>
+      {% if pub.paper %}
+        <div class="publication-note">
+          A preliminary version is available on <a href="{{ pub.paper }}">ResearchGate</a>.
+        </div>
+      {% endif %}
     </div>
   {% endfor %}
 {% endif %}
