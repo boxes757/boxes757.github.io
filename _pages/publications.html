@@ -42,13 +42,13 @@ author_profile: true
     font-size: 0.95em;
   }
 
-  .publication-links {
-    margin-top: 0.2rem;
-    font-size: 0.92em;
+  .publication-links-inline {
+    margin-left: 0.45rem;
+    white-space: nowrap;
   }
 
-  .publication-links a {
-    margin-right: 0.8rem;
+  .publication-links-inline a {
+    margin-left: 0.35rem;
   }
 </style>
 
@@ -98,15 +98,14 @@ author_profile: true
 
     <div class="publication-venue">
       <em>{{ pub.venue }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.number %}({{ pub.number }}){% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %} ({{ pub.year }}).
+      {% if pub.paper or pub.doi or pub.arxiv or pub.code %}
+        <span class="publication-links-inline">
+          {% if pub.paper %}<a href="{{ pub.paper }}">[paper]</a>{% endif %}
+          {% if pub.doi %}<a href="{{ pub.doi }}">[doi]</a>{% endif %}
+          {% if pub.arxiv %}<a href="{{ pub.arxiv }}">[arXiv]</a>{% endif %}
+          {% if pub.code %}<a href="{{ pub.code }}">[code]</a>{% endif %}
+        </span>
+      {% endif %}
     </div>
-
-    {% if pub.paper or pub.doi or pub.arxiv or pub.code %}
-      <div class="publication-links">
-        {% if pub.paper %}<a href="{{ pub.paper }}">Paper</a>{% endif %}
-        {% if pub.doi %}<a href="{{ pub.doi }}">DOI</a>{% endif %}
-        {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}
-        {% if pub.code %}<a href="{{ pub.code }}">[code]</a>{% endif %}
-      </div>
-    {% endif %}
   </div>
 {% endfor %}
