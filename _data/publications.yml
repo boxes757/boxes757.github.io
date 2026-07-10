@@ -117,8 +117,8 @@
   pages: "907–911"
 
 - bibkey: hesurvey
-  status: "manuscript"
-  type: "Manuscript"
+  status: "review"
+  type: "Review"
   title: "A Survey of Tensor Decompositions and Low-Rank Tensor Recovery"
   authors: "Zihao He, Michael K. Ng, and Jinming Wen"
-  venue: "Manuscript"
+  paper: "https://www.researchgate.net/publication/404890521_A_Survey_of_Tensor_Decompositions_and_Low-Rank_Tensor_Recovery"
