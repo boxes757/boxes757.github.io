@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Since February 2026, I have been a **Postdoctoral Fellow at Hong Kong Baptist University**. My research focuses on compressed sensing, tensor decomposition and recovery, nonconvex optimization, and iterative thresholding algorithms.
+Since February 2026, I have been a **Postdoctoral Fellow at Hong Kong Baptist University**, supervised by **Prof. Michael Kwok-Po Ng**. My research focuses on compressed sensing, tensor decomposition and recovery, nonconvex optimization, and iterative thresholding algorithms.
 
 I received my Ph.D. in Cyberspace Security from **Jinan University** in December 2025, supervised by **Prof. Jinming Wen**. From August 2023 to January 2024, I was a visiting student in Electrical Engineering at the **City University of Hong Kong**, supervised by **Prof. Hing Cheung So**. I received my B.S. degree in Information and Computing Science from the **Guangdong University of Technology** in 2020.
 
@@ -23,7 +23,8 @@ I received my Ph.D. in Cyberspace Security from **Jinan University** in December
 ### Hong Kong Baptist University
 
 **Postdoctoral Fellow**  
-Feb. 2026 – Present · Hong Kong SAR, China
+Feb. 2026 – Present · Hong Kong SAR, China  
+Supervisor: Prof. Michael Kwok-Po Ng
 
 ### Jinan University
 
