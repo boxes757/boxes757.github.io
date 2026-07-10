@@ -1,0 +1,124 @@
+# Publication metadata used by _pages/publications.html.
+# Add DOI, paper, arXiv, or code URLs to an entry when they become available.
+
+- bibkey: he2026robust
+  sort_key: "2026-01"
+  status: "published"
+  type: "Journal Article"
+  year: 2026
+  title: "Robust One-Bit Compressed Sensing via Continuous Sign Approximation and Hybrid Ordinary-Welsch Function"
+  authors: "Zihao He, Michael K. Ng, Jinming Wen, and Ran Zhang"
+  venue: "SIAM Journal on Imaging Sciences"
+  volume: "19"
+  number: "2"
+  pages: "975–1014"
+
+- bibkey: wen2025heavy
+  sort_key: "2025-01"
+  status: "published"
+  type: "Journal Article"
+  year: 2025
+  title: "Heavy-Ball Enhanced Pseudo-Inverse-Based Hard Thresholding Algorithms for Sparse Linear Inverse Problems"
+  authors: "Jinming Wen, Junhua He, Zihao He, and Xiaoli Liu"
+  venue: "Inverse Problems"
+  volume: "41"
+  number: "7"
+  pages: "075003"
+
+- bibkey: he2024efficient
+  sort_key: "2024-04"
+  status: "published"
+  type: "Journal Article"
+  year: 2024
+  title: "Efficient Sparse Recovery with Arctangent Regularization: A Novel Iterative Thresholding Algorithm"
+  authors: "Zihao He, Qianyu Shu, Jinming Wen, and Hing Cheung So"
+  venue: "IEEE Transactions on Circuits and Systems for Video Technology"
+  volume: "35"
+  number: "6"
+  pages: "5367–5379"
+
+- bibkey: he2024non
+  sort_key: "2024-03"
+  status: "published"
+  type: "Journal Article"
+  year: 2024
+  title: "Non-Negative Sparse Recovery via Momentum-Boosted Adaptive Thresholding Algorithm"
+  authors: "Zihao He, Zhi-Yong Wang, Jinming Wen, and Hing Cheung So"
+  venue: "Journal of Scientific Computing"
+  volume: "101"
+  number: "2"
+  pages: "47"
+
+- bibkey: he2024novel
+  sort_key: "2024-02"
+  status: "published"
+  type: "Conference Paper"
+  year: 2024
+  title: "A Novel Iterative Thresholding Algorithm for Arctangent Regularization Problem"
+  authors: "Zihao He, Qianyu Shu, Jinming Wen, and Hing Cheung So"
+  venue: "2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  pages: "9651–9655"
+
+- bibkey: he2024relu
+  sort_key: "2024-01"
+  status: "published"
+  type: "Journal Article"
+  year: 2024
+  title: "A ReLU-Based Hard-Thresholding Algorithm for Non-Negative Sparse Signal Recovery"
+  authors: "Zihao He, Qianyu Shu, Yinghua Wang, and Jinming Wen"
+  venue: "Signal Processing"
+  volume: "215"
+  pages: "109260"
+
+- bibkey: wang2023improved
+  sort_key: "2023-01"
+  status: "published"
+  type: "Journal Article"
+  year: 2023
+  title: "Improved Sufficient Conditions Based on RIC of Order 2s for IHT and HTP Algorithms"
+  authors: "Yinghua Wang, Zihao He, Guoming Zhang, and Jinming Wen"
+  venue: "IEEE Signal Processing Letters"
+  volume: "30"
+  pages: "668–672"
+
+- bibkey: li2022interplay
+  sort_key: "2022-03"
+  status: "published"
+  type: "Journal Article"
+  year: 2022
+  title: "Interplay Between Reconfigurable Intelligent Surfaces and Spatial Modulation: New Application Paradigms"
+  authors: "Qiang Li, Miaowen Wen, Jun Li, Zihao He, and Yier Yan"
+  venue: "IEEE Wireless Communications"
+  volume: "30"
+  number: "1"
+  pages: "126–133"
+
+- bibkey: wen2022pseudo
+  sort_key: "2022-02"
+  status: "published"
+  type: "Journal Article"
+  year: 2022
+  title: "A Pseudo-Inverse-Based Hard Thresholding Algorithm for Sparse Signal Recovery"
+  authors: "Jinming Wen, Hongyu He, Zihao He, and Fumin Zhu"
+  venue: "IEEE Transactions on Intelligent Transportation Systems"
+  volume: "24"
+  number: "7"
+  pages: "7621–7630"
+
+- bibkey: he2022improved
+  sort_key: "2022-01"
+  status: "published"
+  type: "Journal Article"
+  year: 2022
+  title: "An Improved Sufficient Condition for Sparse Signal Recovery with Minimization of L1-L2"
+  authors: "Zihao He, Hongyu He, Xiaoli Liu, and Jinming Wen"
+  venue: "IEEE Signal Processing Letters"
+  volume: "29"
+  pages: "907–911"
+
+- bibkey: hesurvey
+  status: "manuscript"
+  type: "Manuscript"
+  title: "A Survey of Tensor Decompositions and Low-Rank Tensor Recovery"
+  authors: "Zihao He, Michael K. Ng, and Jinming Wen"
+  venue: "Manuscript"
