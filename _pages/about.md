@@ -7,23 +7,28 @@ redirect_from:
   - /about.html
 ---
 
-I am an M.S.–Ph.D. candidate in **Cyberspace Security at Jinan University**, supervised by **Prof. Jinming Wen**. My research focuses on compressed sensing, sparse signal recovery, nonconvex optimization, and iterative thresholding algorithms.
+I am a **Postdoctoral Fellow at Hong Kong Baptist University**. My research focuses on compressed sensing, tensor decomposition and recovery, nonconvex optimization, and iterative thresholding algorithms.
 
-From August 2023 to January 2024, I was a visiting student in Electrical Engineering at the **City University of Hong Kong**, supervised by **Prof. Hing Cheung So**. I received my B.S. degree in Information and Computing Science from the **Guangdong University of Technology** in 2020.
+I received my Ph.D. in Cyberspace Security from **Jinan University**, supervised by **Prof. Jinming Wen**. From August 2023 to January 2024, I was a visiting student in Electrical Engineering at the **City University of Hong Kong**, supervised by **Prof. Hing Cheung So**. I received my B.S. degree in Information and Computing Science from the **Guangdong University of Technology** in 2020.
 
 ## Research Interests
 
 - Compressed Sensing
-- Sparse Signal Recovery
+- Tensor Decomposition and Recovery
 - Nonconvex Optimization
 - Iterative Thresholding Algorithms
 
 ## Education and Academic Experience
 
+### Hong Kong Baptist University
+
+**Postdoctoral Fellow**  
+Hong Kong SAR, China
+
 ### Jinan University
 
-**M.S.–Ph.D. in Cyberspace Security**  
-Sep. 2020 – Present · Guangzhou, China  
+**Ph.D. in Cyberspace Security**  
+Guangzhou, China  
 Supervisor: Prof. Jinming Wen
 
 ### City University of Hong Kong
